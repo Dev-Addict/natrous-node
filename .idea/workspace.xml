@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tourRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
@@ -50,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586169751745</updated>
       <workItem from="1586169753205" duration="1392000" />
-      <workItem from="1586171187001" duration="20631000" />
+      <workItem from="1586171187001" duration="22529000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -108,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586195882887</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added user routes but they aren't defined yet, wait a second &lt;|&gt;">
+      <created>1586197286675</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586197286675</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,13 +132,14 @@
     <MESSAGE value="cleaned some code :)" />
     <MESSAGE value="added a middleware to show request time" />
     <MESSAGE value="using morgan third party middleware for express" />
-    <option name="LAST_COMMIT_MESSAGE" value="using morgan third party middleware for express" />
+    <MESSAGE value="added user routes but they aren't defined yet, wait a second &lt;|&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added user routes but they aren't defined yet, wait a second &lt;|&gt;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586195882208">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586197286113">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586195882208" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586197286113" />
     <state x="637" y="327" key="Github.ShareDialog" timestamp="1586185609808">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -138,10 +148,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586195911463">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586197294139">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586195911463" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586197294139" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586192366156">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
