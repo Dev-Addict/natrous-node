@@ -5,11 +5,17 @@ const app = express();
 
 app.use(express.json());
 
+app.use((req, res, next) => {
+  req.requestTime = new Date().toISOString();
+  next();
+});
+
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`));
 
 const getTours = (req, res) => {
   res.status(200).json({
     status: 'success',
+    requestTime: req.requestTime,
     results: tours.length,
     data: { tours }
   });
@@ -21,6 +27,7 @@ const getTour = (req, res) => {
   if (tour) {
     res.status(200).json({
       status: 'success',
+      requestTime: req.requestTime,
       data: {
         tour
       }
@@ -28,6 +35,7 @@ const getTour = (req, res) => {
   } else {
     res.status(404).json({
       status: 'fail',
+      requestTime: req.requestTime,
       message: 'Invalid ID'
     });
   }
@@ -42,6 +50,7 @@ const createTour = (req, res) => {
   fs.writeFile(`${__dirname}/dev-data/data/tours-simple.json`, JSON.stringify(tours), err => {
     res.status(201).json({
       status: 'success',
+      requestTime: req.requestTime,
       data: {
         tour
       }
@@ -64,6 +73,7 @@ const updateTour = (req, res) => {
   fs.writeFile(`${__dirname}/dev-data/data/tours-simple.json`, JSON.stringify(newTours), err => {
     res.status(204).json({
       status: 'success',
+      requestTime: req.requestTime,
       data: {
         tour
       }
@@ -81,6 +91,7 @@ const deleteTour = (req, res) => {
   fs.writeFile(`${__dirname}/dev-data/data/tours-simple.json`, JSON.stringify(newTours), err => {
     res.status(204).json({
       status: 'success',
+      requestTime: req.requestTime,
       data: null
     });
   });
