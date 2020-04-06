@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/tourRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586169751745</updated>
       <workItem from="1586169753205" duration="1392000" />
-      <workItem from="1586171187001" duration="23537000" />
+      <workItem from="1586171187001" duration="25138000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -131,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586199295221</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="clean controllers from routers and server from app and also add nodemon">
+      <created>1586200359830</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586200359830</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,13 +151,14 @@
     <MESSAGE value="using morgan third party middleware for express" />
     <MESSAGE value="added user routes but they aren't defined yet, wait a second &lt;|&gt;" />
     <MESSAGE value="clean routers from app.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean routers from app.js" />
+    <MESSAGE value="clean controllers from routers and server from app and also add nodemon" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean controllers from routers and server from app and also add nodemon" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586199294601">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586209693170">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586199294601" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586209693170" />
     <state x="637" y="327" key="Github.ShareDialog" timestamp="1586185609808">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -163,10 +167,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586199300224">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586200364289">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586199300224" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586200364289" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586192366156">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
