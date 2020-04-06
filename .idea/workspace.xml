@@ -4,6 +4,7 @@
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-data/data/tours-simple.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev-data/data/tours-simple.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +32,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev-data/data" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\web\natours-node\starter\dev-data\data" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586169751745</updated>
       <workItem from="1586169753205" duration="1392000" />
-      <workItem from="1586171187001" duration="5832000" />
+      <workItem from="1586171187001" duration="11028000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -61,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586177091533</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="get single tour using our api">
+      <created>1586178392553</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586178392553</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,13 +83,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="you can get our tours" />
     <MESSAGE value="now you are able to create new tours by post request" />
-    <option name="LAST_COMMIT_MESSAGE" value="now you are able to create new tours by post request" />
+    <MESSAGE value="get single tour using our api" />
+    <option name="LAST_COMMIT_MESSAGE" value="get single tour using our api" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586177090869">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586178391963">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586177090869" />
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586178391963" />
     <state x="637" y="327" key="Github.ShareDialog" timestamp="1586170743727">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -85,5 +99,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586178400673">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586178400673" />
   </component>
 </project>
