@@ -49,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586169751745</updated>
       <workItem from="1586169753205" duration="1392000" />
-      <workItem from="1586171187001" duration="18534000" />
+      <workItem from="1586171187001" duration="19199000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -93,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586192662835</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added a middleware to show request time">
+      <created>1586195348753</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586195348753</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,13 +113,14 @@
     <MESSAGE value="update using patch method" />
     <MESSAGE value="delete my content as much as u want" />
     <MESSAGE value="cleaned some code :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned some code :)" />
+    <MESSAGE value="added a middleware to show request time" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a middleware to show request time" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586192662174">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586195882208">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586192662174" />
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586195882208" />
     <state x="637" y="327" key="Github.ShareDialog" timestamp="1586185609808">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
