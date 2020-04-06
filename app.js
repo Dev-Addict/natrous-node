@@ -15,6 +15,22 @@ app.get('/api/v1/tours', (req, res) => {
     });
 });
 
+app.post('/api/v1/tours', (req, res) => {
+    const id = tours[tours.length - 1];
+    const tour = Object.assign({id}, req.body);
+
+    tours.push(tour);
+
+    fs.writeFile(`${__dirname}/dev-data/data/tours-simple.json`, JSON.stringify(tours), err => {
+        res.status(201).json({
+            status: 'success',
+            data: {
+                tour
+            }
+        });
+    });
+});
+
 const port = 3000;
 app.listen(port, () => {
     console.log(`App is running in port${port}`);
