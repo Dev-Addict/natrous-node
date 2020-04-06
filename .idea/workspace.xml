@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
@@ -47,18 +45,38 @@
       <option name="presentableId" value="Default" />
       <updated>1586169751745</updated>
       <workItem from="1586169753205" duration="1392000" />
-      <workItem from="1586171187001" duration="4469000" />
+      <workItem from="1586171187001" duration="5832000" />
     </task>
+    <task id="LOCAL-00001" summary="you can get our tours">
+      <created>1586177052376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586177052376</updated>
+    </task>
+    <task id="LOCAL-00002" summary="now you are able to create new tours by post request">
+      <created>1586177091533</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586177091533</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="you can get our tours" />
+    <MESSAGE value="now you are able to create new tours by post request" />
+    <option name="LAST_COMMIT_MESSAGE" value="now you are able to create new tours by post request" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586177051606">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586177090869">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586177051606" />
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586177090869" />
     <state x="637" y="327" key="Github.ShareDialog" timestamp="1586170743727">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
