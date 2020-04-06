@@ -51,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586169751745</updated>
       <workItem from="1586169753205" duration="1392000" />
-      <workItem from="1586171187001" duration="11028000" />
+      <workItem from="1586171187001" duration="16041000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -74,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586178392553</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update using patch method">
+      <created>1586185314212</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586185314212</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,24 +91,25 @@
     <MESSAGE value="you can get our tours" />
     <MESSAGE value="now you are able to create new tours by post request" />
     <MESSAGE value="get single tour using our api" />
-    <option name="LAST_COMMIT_MESSAGE" value="get single tour using our api" />
+    <MESSAGE value="update using patch method" />
+    <option name="LAST_COMMIT_MESSAGE" value="update using patch method" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586178391963">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1586185313275">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586178391963" />
-    <state x="637" y="327" key="Github.ShareDialog" timestamp="1586170743727">
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586185313275" />
+    <state x="637" y="327" key="Github.ShareDialog" timestamp="1586185609808">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="637" y="327" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1586170743727" />
+    <state x="637" y="327" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1586185609808" />
     <state x="277" y="75" key="SettingsEditor" timestamp="1586174024946">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586178400673">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586185619616">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586178400673" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586185619616" />
   </component>
 </project>
