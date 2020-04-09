@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/tourModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/tourRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev-data/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../to-do-list" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -60,7 +59,9 @@
       <option name="presentableId" value="Default" />
       <updated>1586169751745</updated>
       <workItem from="1586169753205" duration="1392000" />
-      <workItem from="1586171187001" duration="27185000" />
+      <workItem from="1586171187001" duration="29336000" />
+      <workItem from="1586273286147" duration="2269000" />
+      <workItem from="1586342720157" duration="11954000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -146,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586209762595</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="working with dot(.)env and config">
+      <created>1586212240673</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586212240673</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,17 +173,23 @@
     <MESSAGE value="clean routers from app.js" />
     <MESSAGE value="clean controllers from routers and server from app and also add nodemon" />
     <MESSAGE value="new middleware to check id *v*" />
-    <option name="LAST_COMMIT_MESSAGE" value="new middleware to check id *v*" />
+    <MESSAGE value="working with dot(.)env" />
+    <MESSAGE value="working with dot(.)env and config" />
+    <option name="LAST_COMMIT_MESSAGE" value="working with dot(.)env and config" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586209761983">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586212240091">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586209761983" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586212240091" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1586273339930">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586273339930" />
     <state x="637" y="327" key="Github.ShareDialog" timestamp="1586185609808">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
