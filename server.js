@@ -13,6 +13,10 @@ mongoose.connect(DB, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false
+}).then(con => {
+  console.log('Connected to DB successfully.');
+}).catch(err => {
+  console.log('There is error connecting to DB' + err);
 });
 
 const port = process.env.PORT || 3000;

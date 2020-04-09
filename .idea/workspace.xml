@@ -4,6 +4,7 @@
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/tourRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
@@ -45,6 +46,23 @@
       <recent name="C:\projects\web\natours-node\starter\dev-data\data" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:dev" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -58,7 +76,7 @@
       <workItem from="1586169753205" duration="1392000" />
       <workItem from="1586171187001" duration="29336000" />
       <workItem from="1586273286147" duration="2269000" />
-      <workItem from="1586342720157" duration="14506000" />
+      <workItem from="1586342720157" duration="20329000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -158,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586435191282</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="removed fs from project and add mongoose">
+      <created>1586446746934</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1586446746934</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,17 +205,18 @@
     <MESSAGE value="working with dot(.)env" />
     <MESSAGE value="working with dot(.)env and config" />
     <MESSAGE value="create Tour Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Tour Model" />
+    <MESSAGE value="removed fs from project and add mongoose" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed fs from project and add mongoose" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586435190520">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586446746327">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586435190520" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586446746327" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1586273339930">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
