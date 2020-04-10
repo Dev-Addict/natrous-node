@@ -21,10 +21,22 @@ exports.getTours = async (req, res) => {
     } else {
       toursQuery = toursQuery.select('-__v');
     }
+    const page = req.query.page * 1 || 1;
+    const limit = req.query.limit * 1 || 20;
+    const skip = (page - 1) * limit;
+    toursQuery = toursQuery.skip(skip).limit(limit);
     const tours = await toursQuery;
+    if (req.query.page) {
+      const length = await Tour.countDocuments();
+      if (skip >= length) {
+        throw new Error('We dont have enough data to fit the page');
+      }
+    }
     res.status(200).json({
       status: 'success',
       results: tours.length,
+      page,
+      limit,
       data: {
         tours
       }
