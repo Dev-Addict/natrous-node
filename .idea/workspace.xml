@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dataImpoerter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tourModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tourModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,8 @@
       <workItem from="1586169753205" duration="1392000" />
       <workItem from="1586171187001" duration="29336000" />
       <workItem from="1586273286147" duration="2269000" />
-      <workItem from="1586342720157" duration="22748000" />
+      <workItem from="1586342720157" duration="23581000" />
+      <workItem from="1586512036868" duration="2410000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -187,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586456848992</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="updated tourModel">
+      <created>1586459406572</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586459406572</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,17 +219,18 @@
     <MESSAGE value="create Tour Model" />
     <MESSAGE value="removed fs from project and add mongoose" />
     <MESSAGE value="crud is now working with mongoose" />
-    <option name="LAST_COMMIT_MESSAGE" value="crud is now working with mongoose" />
+    <MESSAGE value="updated tourModel" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated tourModel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586456848386">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586534894994">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586456848386" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586534894994" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1586273339930">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -230,14 +239,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="637" y="327" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1586185609808" />
+    <state width="1514" height="203" key="GridCell.Tab.0.bottom" timestamp="1586459588532">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1514" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586459588532" />
+    <state width="1514" height="203" key="GridCell.Tab.0.center" timestamp="1586459588531">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1514" height="203" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586459588531" />
+    <state width="1514" height="203" key="GridCell.Tab.0.left" timestamp="1586459588531">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1514" height="203" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586459588531" />
+    <state width="1514" height="203" key="GridCell.Tab.0.right" timestamp="1586459588531">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1514" height="203" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586459588531" />
     <state x="277" y="75" key="SettingsEditor" timestamp="1586174024946">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586456898849">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586534910787">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586456898849" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586534910787" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586192366156">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
