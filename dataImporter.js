@@ -25,18 +25,22 @@ const tours = JSON.parse(
 const importData = async () => {
   try {
     await Tour.create(tours);
-    console.log('data successfully created')
+    console.log('data successfully created');
+    process.exit();
   } catch (err) {
     console.log(err);
+    process.exit();
   }
 };
 
 const deleteData = async () => {
   try {
     await Tour.deleteMany();
-    console.log('data successfully deleted')
+    console.log('data successfully deleted');
+    process.exit();
   } catch (err) {
     console.log(err);
+    process.exit();
   }
 };
 
