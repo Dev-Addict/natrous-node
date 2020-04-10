@@ -15,6 +15,12 @@ exports.getTours = async (req, res) => {
     } else {
       query.sort('-createdAt');
     }
+    if (req.query.fields) {
+      const fields = req.query.fields.replace(/,/g, ' ');
+      toursQuery = toursQuery.select(fields);
+    } else {
+      toursQuery = toursQuery.select('-__v');
+    }
     const tours = await toursQuery;
     res.status(200).json({
       status: 'success',
