@@ -1,4 +1,5 @@
 const Tour = require('../models/tourModel');
+const APIFeatures = require('../utils/APIFeatures');
 
 exports.aliasTopTours = (req, res, next) => {
   req.query.limit = '5';
@@ -8,41 +9,16 @@ exports.aliasTopTours = (req, res, next) => {
 
 exports.getTours = async (req, res) => {
   try {
-    const query = { ...req.query };
-    const queryExcludedFields = ['page', 'sort', 'limit', 'fields'];
-    queryExcludedFields.forEach(el => delete query[el]);
-    const queryString = JSON.stringify(query)
-      .replace(/\b(gte|gt|lte|lt)\b/g,
-        match => `$${match}`);
-    let toursQuery = Tour.find(JSON.parse(queryString));
-    if (req.query.sort) {
-      const sortBy = req.query.sort.replace(/,/g, ' ');
-      toursQuery = toursQuery.sort(sortBy);
-    } else {
-      query.sort('-createdAt');
-    }
-    if (req.query.fields) {
-      const fields = req.query.fields.replace(/,/g, ' ');
-      toursQuery = toursQuery.select(fields);
-    } else {
-      toursQuery = toursQuery.select('-__v');
-    }
-    const page = req.query.page * 1 || 1;
-    const limit = req.query.limit * 1 || 20;
-    const skip = (page - 1) * limit;
-    toursQuery = toursQuery.skip(skip).limit(limit);
-    const tours = await toursQuery;
-    if (req.query.page) {
-      const length = await Tour.countDocuments();
-      if (skip >= length) {
-        throw new Error('We dont have enough data to fit the page');
-      }
-    }
+    const features =
+      new APIFeatures(Tour.find(), req.query)
+        .filter()
+        .sort()
+        .limitFields()
+        .paginate();
+    const tours = await features.query;
     res.status(200).json({
       status: 'success',
       results: tours.length,
-      page,
-      limit,
       data: {
         tours
       }
