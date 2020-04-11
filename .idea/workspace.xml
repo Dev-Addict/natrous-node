@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tourModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tourModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -76,7 +76,7 @@
       <workItem from="1586171187001" duration="29336000" />
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
-      <workItem from="1586512036868" duration="34324000" />
+      <workItem from="1586512036868" duration="39186000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -281,14 +281,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586587520074</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="write some validators">
+      <created>1586605594923</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1586605594923</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cleaned some code :)" />
     <MESSAGE value="added a middleware to show request time" />
     <MESSAGE value="using morgan third party middleware for express" />
     <MESSAGE value="added user routes but they aren't defined yet, wait a second &lt;|&gt;" />
@@ -313,17 +319,18 @@
     <MESSAGE value="created some document middleware" />
     <MESSAGE value="created some query middleware" />
     <MESSAGE value="created some aggregation middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="created some aggregation middleware" />
+    <MESSAGE value="write some validators" />
+    <option name="LAST_COMMIT_MESSAGE" value="write some validators" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586587519522">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586605594341">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586587519522" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586605594341" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1586273339930">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -352,10 +359,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586586847696">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586605599434">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586586847696" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586605599434" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586192366156">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
