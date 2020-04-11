@@ -1,6 +1,7 @@
 const Tour = require('../models/tourModel');
 const APIFeatures = require('../utils/APIFeatures');
 const catchAsync = require('../utils/catchAsync');
+const AppError = require('../utils/AppError');
 
 exports.aliasTopTours = (req, res, next) => {
   req.query.limit = '5';
@@ -31,7 +32,13 @@ exports.getTours = catchAsync(
 
 exports.getTour = catchAsync(
   async (req, res) => {
+    if (!/^(?=[a-f\d]{24}$)(\d+[a-f]|[a-f]+\d)/i.test(req.params.id)) {
+      throw new AppError('The ID is invalid', 404);
+    }
     const tour = await Tour.findById(req.params.id);
+    if (!tour) {
+      throw new AppError('No tour found with this ID', 404);
+    }
     res.status(201).json({
       status: 'success',
       data: {
