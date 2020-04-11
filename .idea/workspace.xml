@@ -74,7 +74,7 @@
       <workItem from="1586171187001" duration="29336000" />
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
-      <workItem from="1586512036868" duration="25097000" />
+      <workItem from="1586512036868" duration="26477000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -258,14 +258,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586584400318</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="created some document middleware">
+      <created>1586585494694</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1586585494694</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="get single tour using our api" />
     <MESSAGE value="update using patch method" />
     <MESSAGE value="delete my content as much as u want" />
     <MESSAGE value="cleaned some code :)" />
@@ -290,17 +296,18 @@
     <MESSAGE value="clean some code about features" />
     <MESSAGE value="using aggregation pipeline" />
     <MESSAGE value="using virtual property for tour model" />
-    <option name="LAST_COMMIT_MESSAGE" value="using virtual property for tour model" />
+    <MESSAGE value="created some document middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="created some document middleware" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586584399738">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586585494081">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586584399738" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586585494081" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1586273339930">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
