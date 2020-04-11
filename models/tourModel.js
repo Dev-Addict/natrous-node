@@ -60,6 +60,16 @@ tourSchema.virtual('durationWeek').get(function() {
   return this.duration / 7;
 });
 
+tourSchema.pre('save', function(next) {
+  console.log('we are creating a new Tour with details of' + this);
+  next();
+});
+
+tourSchema.post('save', function(doc, next) {
+  console.log('a tour with ' + doc + 'created');
+  next();
+});
+
 const Tour = mongoose.model('Tour', tourSchema);
 
 
