@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/APIFeatures.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/tourRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/APIFeatures.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/APIFeatures.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <workItem from="1586171187001" duration="29336000" />
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
-      <workItem from="1586512036868" duration="13994000" />
+      <workItem from="1586512036868" duration="22744000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -238,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586547499135</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="clean some code about features">
+      <created>1586549388976</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1586549388976</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,17 +277,18 @@
     <MESSAGE value="you can select the fields u want my REST API" />
     <MESSAGE value="you can select the page and limit u want my REST API" />
     <MESSAGE value="added top 5 cheap tours alias" />
-    <option name="LAST_COMMIT_MESSAGE" value="added top 5 cheap tours alias" />
+    <MESSAGE value="clean some code about features" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean some code about features" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586547498461">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586549388401">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586547498461" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586549388401" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1586273339930">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -308,10 +317,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586546096946">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586549425313">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586546096946" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586549425313" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586192366156">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
