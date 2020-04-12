@@ -12,14 +12,17 @@ const DB =
 mongoose.connect(DB, {
   useNewUrlParser: true,
   useCreateIndex: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true
 }).then(con => {
   console.log('Connected to DB successfully.');
-}).catch(err => {
-  console.log('There is error connecting to DB' + err);
 });
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`App is running in port${port}`);
+});
+
+process.on('unhandledRejection', err => {
+  console.log(err.name, err.message);
 });

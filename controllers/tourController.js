@@ -32,9 +32,6 @@ exports.getTours = catchAsync(
 
 exports.getTour = catchAsync(
   async (req, res) => {
-    if (!/^(?=[a-f\d]{24}$)(\d+[a-f]|[a-f]+\d)/i.test(req.params.id)) {
-      throw new AppError('The ID is invalid', 404);
-    }
     const tour = await Tour.findById(req.params.id);
     if (!tour) {
       throw new AppError('No tour found with this ID', 404);
