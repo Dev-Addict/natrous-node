@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/errorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/errorController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,7 @@
       <workItem from="1586171187001" duration="29336000" />
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
-      <workItem from="1586512036868" duration="56420000" />
+      <workItem from="1586512036868" duration="56660000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -323,14 +321,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586625530387</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="handle unhandled rejection and mongoDB errors">
+      <created>1586695234091</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1586695234091</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new middleware to check id *v*" />
     <MESSAGE value="working with dot(.)env" />
     <MESSAGE value="working with dot(.)env and config" />
     <MESSAGE value="create Tour Model" />
@@ -355,17 +359,18 @@
     <MESSAGE value="clean global error handling middleware(amazing name yeah)" />
     <MESSAGE value="using global error handling in tourController.js" />
     <MESSAGE value="some error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="some error handling" />
+    <MESSAGE value="handle unhandled rejection and mongoDB errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="handle unhandled rejection and mongoDB errors" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586625529768">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586695233439">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586625529768" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586695233439" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
