@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
+const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -14,7 +15,6 @@ const userSchema = new mongoose.Schema({
     required: [true, 'A User Must Have A email'],
     unique: true,
     lowercase: true,
-    trim: true,
     validate: {
       validator: validator.isEmail,
       message: 'A User Must Have Valid email'
@@ -22,7 +22,6 @@ const userSchema = new mongoose.Schema({
   },
   photo: {
     type: String,
-    trim: true,
     validate: {
       validator: validator.isURL,
       message: 'A User Must Have A Valid photo URL'
@@ -33,18 +32,15 @@ const userSchema = new mongoose.Schema({
     required: [true, 'A User Must Have A password'],
     minLength: 8,
     maxLength: 100
-  },
-  passwordConfirm: {
-    type: String,
-    required: [true, 'A User Must Have A password'],
-    minLength: 8,
-    maxLength: 100,
-    validate: {
-      validator: function(value) {
-        return value === this.password;
-      }
-    }
   }
+});
+
+userSchema.pre('save', async function(next) {
+  if (!this.isModified('password')) {
+    return next();
+  }
+  this.password = await bcrypt.hash(this.password, 12);
+  next();
 });
 
 const User = mongoose.model('User', userSchema);
