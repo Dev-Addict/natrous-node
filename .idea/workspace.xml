@@ -74,7 +74,7 @@
       <workItem from="1586171187001" duration="29336000" />
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
-      <workItem from="1586512036868" duration="56660000" />
+      <workItem from="1586512036868" duration="57176000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -328,14 +328,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586695234091</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="update the way of handle unhandled rejection">
+      <created>1586695616833</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1586695616833</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working with dot(.)env" />
     <MESSAGE value="working with dot(.)env and config" />
     <MESSAGE value="create Tour Model" />
     <MESSAGE value="removed fs from project and add mongoose" />
@@ -360,17 +366,18 @@
     <MESSAGE value="using global error handling in tourController.js" />
     <MESSAGE value="some error handling" />
     <MESSAGE value="handle unhandled rejection and mongoDB errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="handle unhandled rejection and mongoDB errors" />
+    <MESSAGE value="update the way of handle unhandled rejection" />
+    <option name="LAST_COMMIT_MESSAGE" value="update the way of handle unhandled rejection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586695233439">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586695616272">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586695233439" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586695616272" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
