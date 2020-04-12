@@ -38,7 +38,12 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'A User Must Have A password'],
     minLength: 8,
-    maxLength: 100
+    maxLength: 100,
+    validate: {
+      validator: function(value) {
+        return value === this.password;
+      }
+    }
   }
 });
 
