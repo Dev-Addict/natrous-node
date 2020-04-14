@@ -5,6 +5,7 @@ const validator = require('validator');
 const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/AppError');
+const sendEmail = require('../utils/email');
 
 const signToken = ({ _id }) => {
   return jsonWebToken.sign(
@@ -106,7 +107,29 @@ exports.forgotPassword = catchAsync(
       throw new AppError('wrong Email address', 404);
     }
     const resetToken = user.createResetPasswordToken();
-    await user.save();
+    await user.save({
+      validateBeforeSave: false
+    });
+    const resetURL =
+      `${req.protocol}://${req.get('host')}/api/v1/users/resetPassword/${resetToken}`;
+    const message = `Go to ${resetURL} to reset your password`;
+    await sendEmail({
+      email: user.email,
+      subject: 'Reset password (valid for 10 minutes)',
+      message
+    }).catch(async err => {
+      user.passwordResetToken = undefined;
+      user.passwordResetExpires = undefined;
+      await user.save({
+        validateBeforeSave: false
+      });
+      throw new AppError('failed to send the email', 500);
+    });
+
+    res.status(200).json({
+      status: 'success',
+      message: 'we sent the email'
+    });
   }
 );
 

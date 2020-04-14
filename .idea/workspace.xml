@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/utils/email.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +80,7 @@
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
       <workItem from="1586512036868" duration="72746000" />
-      <workItem from="1586788205389" duration="28172000" />
+      <workItem from="1586788205389" duration="31251000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -394,14 +397,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586882751426</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="forgot password not fully done it doesn't send the error">
+      <created>1586884546129</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1586884546129</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="you can select the fields u want my REST API" />
     <MESSAGE value="you can select the page and limit u want my REST API" />
     <MESSAGE value="added top 5 cheap tours alias" />
     <MESSAGE value="clean some code about features" />
@@ -426,17 +435,18 @@
     <MESSAGE value="created the login method" />
     <MESSAGE value="protect my REST API" />
     <MESSAGE value="working with user permissions" />
-    <option name="LAST_COMMIT_MESSAGE" value="working with user permissions" />
+    <MESSAGE value="forgot password not fully done it doesn't send the error" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgot password not fully done it doesn't send the error" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586882750829">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586884545487">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586882750829" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586884545487" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
