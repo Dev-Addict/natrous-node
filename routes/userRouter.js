@@ -14,12 +14,12 @@ router
 
 router
   .route('/')
-  .get(userController.getUsers)
-  .post(userController.createUser);
+  .get(authController.protect, userController.getUsers)
+  .post(authController.protect, userController.createUser);
 router
   .route('/:id')
-  .get(userController.getUser)
-  .patch(userController.updateUser)
-  .delete(userController.deleteUser);
+  .get(authController.protect, userController.getUser)
+  .patch(authController.protect, userController.updateUser)
+  .delete(authController.protect, userController.deleteUser);
 
 module.exports = router;

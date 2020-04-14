@@ -1,6 +1,6 @@
+const {promisify} = require('util');
 const jsonWebToken = require('jsonwebtoken');
 const validator = require('validator');
-const bcrypt = require('bcrypt');
 
 const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
@@ -61,4 +61,30 @@ exports.signIn = catchAsync(async (req, res) => {
     status: 'success',
     token
   });
+});
+
+exports.protect = catchAsync(async (req, res, next) => {
+  let token;
+  if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+    token = req.headers.authorization.split(' ')[1];
+  }
+  if (!token) {
+    throw new AppError('You are not logged in.', 401)
+  }
+  const decodedToken = await promisify(jsonWebToken.verify)(token, process.env.JSON_WEB_TOKEN_SECRET);
+  const user = await User.findById(decodedToken.id);
+  if (!user) {
+    throw new AppError(
+      'The user belong to the token that no longer exists',
+      401
+    );
+  }
+  if (user.isPasswordChanged(decodedToken.iat)) {
+    throw new AppError(
+      'The user has changed the password pls create new token',
+      401
+    );
+  }
+  req.user = user;
+  next();
 });
