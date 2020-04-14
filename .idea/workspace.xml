@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/email.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
       <workItem from="1586512036868" duration="72746000" />
-      <workItem from="1586788205389" duration="31251000" />
+      <workItem from="1586788205389" duration="33259000" />
     </task>
     <task id="LOCAL-00001" summary="you can get our tours">
       <created>1586177052376</created>
@@ -404,14 +400,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586884546129</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="send forgot email and trap it">
+      <created>1586887425558</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1586887425558</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="you can select the page and limit u want my REST API" />
     <MESSAGE value="added top 5 cheap tours alias" />
     <MESSAGE value="clean some code about features" />
     <MESSAGE value="using aggregation pipeline" />
@@ -436,17 +438,18 @@
     <MESSAGE value="protect my REST API" />
     <MESSAGE value="working with user permissions" />
     <MESSAGE value="forgot password not fully done it doesn't send the error" />
-    <option name="LAST_COMMIT_MESSAGE" value="forgot password not fully done it doesn't send the error" />
+    <MESSAGE value="send forgot email and trap it" />
+    <option name="LAST_COMMIT_MESSAGE" value="send forgot email and trap it" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586884545487">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586887424899">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586884545487" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586887424899" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -479,10 +482,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586882754304">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586887428853">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586882754304" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586887428853" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
