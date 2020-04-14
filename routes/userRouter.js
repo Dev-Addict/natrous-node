@@ -13,6 +13,14 @@ router
   .post(authController.signIn);
 
 router
+  .route('/forgotPassword')
+  .post(authController.forgotPassword);
+
+router
+  .route('/resetPassword')
+  .post(authController.resetPassword);
+
+router
   .route('/')
   .get(authController.protect, userController.getUsers)
   .post(authController.protect, userController.createUser);
