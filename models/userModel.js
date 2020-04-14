@@ -27,6 +27,14 @@ const userSchema = new mongoose.Schema({
       message: 'A User Must Have A Valid photo URL'
     }
   },
+  rote: {
+    type: String,
+    enum: {
+      values: ['admin', 'guide', 'guide-lead', 'user'],
+      message: 'A User Must Have rote Value Set To admin Or User.'
+    },
+    default: 'user'
+  },
   password: {
     type: String,
     required: [true, 'A User Must Have A password'],

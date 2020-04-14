@@ -17,11 +17,11 @@ router
 router
   .route('/')
   .get(authController.protect, tourController.getTours)
-  .post(authController.protect, tourController.createTour);
+  .post(authController.protect, authController.restrictTo('admin', 'lead-guide'), tourController.createTour);
 router
   .route('/:id')
   .get(authController.protect, tourController.getTour)
-  .patch(authController.protect, tourController.updateTour)
-  .delete(authController.protect, tourController.deleteTour);
+  .patch(authController.protect, authController.restrictTo('admin', 'lead-guide'), tourController.updateTour)
+  .delete(authController.protect, authController.restrictTo('admin', 'lead-guide'), tourController.deleteTour);
 
 module.exports = router;

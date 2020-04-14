@@ -1,4 +1,4 @@
-const {promisify} = require('util');
+const { promisify } = require('util');
 const jsonWebToken = require('jsonwebtoken');
 const validator = require('validator');
 
@@ -6,7 +6,7 @@ const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/AppError');
 
-const signToken = ({_id}) => {
+const signToken = ({ _id }) => {
   return jsonWebToken.sign(
     {
       id: _id
@@ -40,7 +40,7 @@ exports.signUp = catchAsync(
 );
 
 exports.signIn = catchAsync(async (req, res) => {
-  const {email, password} = req.body;
+  const { email, password } = req.body;
   if (
     !email ||
     !password ||
@@ -69,7 +69,7 @@ exports.protect = catchAsync(async (req, res, next) => {
     token = req.headers.authorization.split(' ')[1];
   }
   if (!token) {
-    throw new AppError('You are not logged in.', 401)
+    throw new AppError('You are not logged in.', 401);
   }
   const decodedToken = await promisify(jsonWebToken.verify)(token, process.env.JSON_WEB_TOKEN_SECRET);
   const user = await User.findById(decodedToken.id);
@@ -88,3 +88,13 @@ exports.protect = catchAsync(async (req, res, next) => {
   req.user = user;
   next();
 });
+
+exports.restrictTo = (...roles) => {
+  return catchAsync((req, res, next) => {
+      if (!roles.includes(req.user.role)) {
+        throw new AppError('You don\'t have permission to do that', 403);
+      }
+      next();
+    }
+  );
+};
