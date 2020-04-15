@@ -20,6 +20,27 @@ const signToken = ({ _id }) => {
   );
 };
 
+const sendToken = (user, res, statusCode) => {
+  const token = signToken(user);
+
+  res.cookie(
+    'JsonWebToken',
+    token,
+    {
+    expires:
+      new Date(
+        Date.now() +
+        process.env.JSON_WEB_TOKEN_COOKIE_TIME * 24 * 60 * 60 * 1000),
+    secure: true,
+    httpOnly: true
+  });
+
+  res.status(statusCode).json({
+    status: 'success',
+    token
+  });
+};
+
 exports.signUp = catchAsync(
   async (req, res) => {
     const user = await User.create({
@@ -29,15 +50,7 @@ exports.signUp = catchAsync(
       password: req.body.password
     });
 
-    const token = signToken(user);
-
-    res.status(201).json({
-      status: 'success',
-      token,
-      data: {
-        user: 'No User Data Leak Policy'
-      }
-    });
+    sendToken(user, res, 201);
   }
 );
 
@@ -57,12 +70,9 @@ exports.signIn = catchAsync(async (req, res) => {
     throw new AppError('Incorrect email or password', 401);
   }
 
-  const token = signToken(user);
 
-  res.status(200).json({
-    status: 'success',
-    token
-  });
+
+  sendToken(user, res, 200);
 });
 
 exports.protect = catchAsync(async (req, res, next) => {
@@ -149,12 +159,9 @@ exports.resetPassword = catchAsync(
     user.password = request.body.password;
     await user.save();
 
-    const token = signToken(user);
 
-    res.status(200).json({
-      status: 'success',
-      token
-    });
+
+    sendToken(user, res, 200);
   }
 );
 
@@ -168,12 +175,7 @@ exports.updatePassword = catchAsync(async (req, res, next) => {
   user.password = req.body.newPassword;
   await user.save();
 
-  const token = signToken(user);
-
-  res.status(200).json({
-    status: 'success',
-    token
-  });
+  sendToken(user, res, 200);
 });
 
 exports.updateUser = catchAsync(async (req, res, next)=> {
