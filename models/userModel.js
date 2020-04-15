@@ -45,7 +45,12 @@ const userSchema = new mongoose.Schema({
   },
   passwordChangedAt: Date,
   passwordResetToken: String,
-  passwordResetExpires: Date
+  passwordResetExpires: Date,
+  active: {
+    type: Boolean,
+    default: true,
+    select: false
+  }
 });
 
 userSchema.methods.correctPassword = async function(
@@ -61,7 +66,7 @@ userSchema.methods.isPasswordChanged = function(JWTTimeStamp) {
       return true;
     }
   }
-  return false
+  return false;
 };
 
 userSchema.methods.createResetPasswordToken = function() {
@@ -89,6 +94,11 @@ userSchema.pre('save', function(next) {
     this.passwordResetToken = undefined;
     this.passwordResetExpires = undefined;
   }
+  next();
+});
+
+userSchema.pre(/^find/, function(next) {
+  this.find({ active: { $ne: false } });
   next();
 });
 
