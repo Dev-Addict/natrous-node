@@ -175,3 +175,24 @@ exports.updatePassword = catchAsync(async (req, res, next) => {
     token
   });
 });
+
+exports.updateUser = catchAsync(async (req, res, next)=> {
+  if (req.body.password || req.body.email || req.body.role) {
+    throw new AppError(
+      'You can\'t change your password or email or role using this route',
+      400
+    );
+  }
+
+  const user = await User.findByIdAndUpdate(req.user._id, req.body, {
+    new: true,
+    runValidators: true
+  });
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      user
+    }
+  })
+});
