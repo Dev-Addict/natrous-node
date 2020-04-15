@@ -4,6 +4,7 @@ const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
+const hpp = require('hpp');
 
 const tourRouter = require('./routes/tourRouter');
 const userRouter = require('./routes/userRouter');
@@ -21,6 +22,17 @@ app.use(mongoSanitize());
 app.use(xss());
 
 app.use(helmet());
+
+app.use(hpp({
+  whitelist: [
+    'duration',
+    'ratingsAverage',
+    'ratingsQuantity',
+    'maxGroupSize',
+    'difficulty',
+    'price'
+  ]
+}));
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
