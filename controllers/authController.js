@@ -157,3 +157,21 @@ exports.resetPassword = catchAsync(
     });
   }
 );
+
+exports.updatePassword = catchAsync(async (req, res, next) => {
+  const user = await User.findOne({ email: req.body.email }).select('+password');
+
+  if (!user || !(await user.correctPassword(req.body.password, user.password))) {
+    throw new AppError('Incorrect email or password', 401);
+  }
+
+  user.password = req.body.newPassword;
+  await user.save();
+
+  const token = signToken(user);
+
+  res.status(200).json({
+    status: 'success',
+    token
+  });
+});
