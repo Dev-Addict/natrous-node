@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
+    <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="update tour model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/tourModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tourModel.js" afterDir="false" />
@@ -76,14 +76,7 @@
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
       <workItem from="1586512036868" duration="72746000" />
-      <workItem from="1586788205389" duration="57553000" />
-    </task>
-    <task id="LOCAL-00008" summary="using morgan third party middleware for express">
-      <created>1586195882887</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1586195882887</updated>
+      <workItem from="1586788205389" duration="58116000" />
     </task>
     <task id="LOCAL-00009" summary="added user routes but they aren't defined yet, wait a second &lt;|&gt;">
       <created>1586197286675</created>
@@ -421,14 +414,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586972070890</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update tour model">
+      <created>1587037486184</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1587037486184</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create global error handling middleware(amazing name yeah)" />
     <MESSAGE value="clean global error handling middleware(amazing name yeah)" />
     <MESSAGE value="using global error handling in tourController.js" />
     <MESSAGE value="some error handling" />
@@ -453,17 +452,18 @@
     <MESSAGE value="set helmet and request body limit" />
     <MESSAGE value="no nosql query injection and html in my db" />
     <MESSAGE value="add hpp to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hpp to project" />
+    <MESSAGE value="update tour model" />
+    <option name="LAST_COMMIT_MESSAGE" value="update tour model" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1586972070314">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587037485314">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586972070314" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587037485314" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -496,10 +496,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1586972075060">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587037489754">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586972075060" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587037489754" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
