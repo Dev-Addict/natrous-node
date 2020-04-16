@@ -65,7 +65,7 @@ exports.updateReview = catchAsync(
   }
 );
 
-exports.deleteTour = catchAsync(
+exports.deleteReview = catchAsync(
   async (req, res) => {
     await Review.findByIdAndDelete(req.params.id);
     res.status(204).json({

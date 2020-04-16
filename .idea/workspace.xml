@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/reviewController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/reviewRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/reviewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/reviewController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,14 +76,7 @@
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
       <workItem from="1586512036868" duration="72746000" />
-      <workItem from="1586788205389" duration="67335000" />
-    </task>
-    <task id="LOCAL-00014" summary="create Tour Model">
-      <created>1586435191281</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1586435191282</updated>
+      <workItem from="1586788205389" duration="68056000" />
     </task>
     <task id="LOCAL-00015" summary="removed fs from project and add mongoose">
       <created>1586446746934</created>
@@ -420,14 +414,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587054842258</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="create review controller">
+      <created>1587057841022</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1587057841022</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="handle uncaught exceptions" />
     <MESSAGE value="create userModel" />
     <MESSAGE value="sign up easily" />
     <MESSAGE value="using jwt and some security update" />
@@ -452,17 +452,18 @@
     <MESSAGE value="populate the guides of tours in get tours" />
     <MESSAGE value="populate the guides using query middleware" />
     <MESSAGE value="create review model" />
-    <option name="LAST_COMMIT_MESSAGE" value="create review model" />
+    <MESSAGE value="create review controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="create review controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587054841373">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587057840365">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587054841373" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587057840365" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
