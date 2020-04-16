@@ -6,7 +6,7 @@ const reviewSchema = mongoose.Schema(
       type: String,
       required: [true, 'A Review Must Have review'],
       maxLength: [600, 'A Review Must Have review With Less Than 600 Characters'],
-      minLength: [50, 'A Review Must Have review With At List 50 Characters']
+      minLength: [10, 'A Review Must Have review With At List 50 Characters']
     },
     rating: {
       type : Number,
@@ -34,6 +34,16 @@ const reviewSchema = mongoose.Schema(
     toObject: {virtuals: true}
   }
 );
+
+reviewSchema.pre(/^find/, function(next) {
+  this.populate({
+    path: 'user',
+    select: '-__v -passwordChangedAt -passwordResetToken -passwordResetExpires'
+  }).populate({
+    path: 'tour'
+  });
+  next();
+});
 
 const Review = mongoose.model('Review', reviewSchema);
 
