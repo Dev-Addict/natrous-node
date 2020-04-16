@@ -135,6 +135,12 @@ tourSchema.pre(/^find/, function(next) {
   next();
 });
 
+tourSchema.virtual('reviews', {
+  ref: 'Review',
+  foreignField: 'tour',
+  localField: '_id'
+});
+
 tourSchema.pre('aggregate', function(next) {
   this.pipeline().unshift({
     $match: {
