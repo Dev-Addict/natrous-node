@@ -75,14 +75,7 @@
       <workItem from="1586273286147" duration="2269000" />
       <workItem from="1586342720157" duration="23581000" />
       <workItem from="1586512036868" duration="72746000" />
-      <workItem from="1586788205389" duration="60545000" />
-    </task>
-    <task id="LOCAL-00011" summary="clean controllers from routers and server from app and also add nodemon">
-      <created>1586200359830</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1586200359830</updated>
+      <workItem from="1586788205389" duration="61499000" />
     </task>
     <task id="LOCAL-00012" summary="new middleware to check id *v*">
       <created>1586209762595</created>
@@ -420,14 +413,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587038392793</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="populate the guides of tours in get tours">
+      <created>1587050810875</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1587050810876</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some error handling" />
     <MESSAGE value="handle unhandled rejection and mongoDB errors" />
     <MESSAGE value="update the way of handle unhandled rejection" />
     <MESSAGE value="handle uncaught exceptions" />
@@ -452,17 +451,18 @@
     <MESSAGE value="update tour model" />
     <MESSAGE value="add guides to tours" />
     <MESSAGE value="update guides in tours logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="update guides in tours logic" />
+    <MESSAGE value="populate the guides of tours in get tours" />
+    <option name="LAST_COMMIT_MESSAGE" value="populate the guides of tours in get tours" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587038391942">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587050809568">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587038391942" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587050809568" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

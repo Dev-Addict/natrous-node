@@ -122,7 +122,15 @@ tourSchema.post('save', function(doc, next) {
   next();
 });
 
-tourSchema.pre(/^find/g, function(next) {
+tourSchema.pre(/^find/, function(next) {
+  this.populate({
+    path: 'guides',
+    select: '-__v -passwordChangedAt -passwordResetToken -passwordResetExpires'
+  });
+  next();
+});
+
+tourSchema.pre(/^find/, function(next) {
   this.find({ secretTour: { $ne: true } });
   next();
 });
