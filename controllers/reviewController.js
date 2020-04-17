@@ -2,6 +2,7 @@ const Review = require('../models/reviewModel');
 const APIFeatures = require('../utils/APIFeatures');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/AppError');
+const factory = require('./handlerFactory');
 
 exports.getReviews = catchAsync(
   async (req, res, next) => {
@@ -77,12 +78,4 @@ exports.updateReview = catchAsync(
   }
 );
 
-exports.deleteReview = catchAsync(
-  async (req, res) => {
-    await Review.findByIdAndDelete(req.params.id);
-    res.status(204).json({
-      status: 'success',
-      data: null
-    });
-  }
-);
+exports.deleteReview = factory.deleteOne(Review);

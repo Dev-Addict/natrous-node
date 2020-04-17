@@ -2,6 +2,7 @@ const User = require('../models/userModel');
 const APIFeatures = require('../utils/APIFeatures');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/AppError');
+const factory = require('./handlerFactory');
 
 exports.getUsers = catchAsync(
   async (req, res) => {
@@ -66,12 +67,4 @@ exports.updateUser = catchAsync(
   }
 );
 
-exports.deleteUser = catchAsync(
-  async (req, res) => {
-    await User.findByIdAndDelete(req.params.id);
-    res.status(204).json({
-      status: 'success',
-      data: null
-    });
-  }
-);
+exports.deleteUser = factory.deleteOne(User);
