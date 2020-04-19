@@ -11,7 +11,9 @@ const router = express.Router(
 router
   .route('/')
   .get(reviewController.getReviews)
-  .post(reviewController.createTour);
+  .post(
+    reviewController.setInitialData,
+    reviewController.createReview);
 router
   .route('/:id')
   .get(reviewController.getReview)

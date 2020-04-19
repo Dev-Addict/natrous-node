@@ -25,17 +25,7 @@ exports.getUsers = catchAsync(
   }
 );
 
-exports.createUser = catchAsync(
-  async (req, res) => {
-    const newUser = await User.create(req.body);
-    res.status(201).json({
-      status: 'success',
-      data: {
-        user: newUser
-      }
-    });
-  }
-);
+exports.createUser = factory.createOne(User);
 
 exports.getUser = catchAsync(
   async (req, res) => {
@@ -52,19 +42,6 @@ exports.getUser = catchAsync(
   }
 );
 
-exports.updateUser = catchAsync(
-  async (req, res) => {
-    const user = await User.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true
-    });
-    res.status(200).json({
-      status: 'success',
-      data: {
-        user: 'updated User'
-      }
-    });
-  }
-);
+exports.updateUser = factory.updateOne(User);
 
 exports.deleteUser = factory.deleteOne(User);

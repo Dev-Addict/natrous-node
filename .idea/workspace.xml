@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/handlerFactory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/handlerFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/handlerFactory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/reviewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/reviewController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/reviewRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reviewRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,14 +80,8 @@
       <workItem from="1586342720157" duration="23581000" />
       <workItem from="1586512036868" duration="72746000" />
       <workItem from="1586788205389" duration="73543000" />
-      <workItem from="1587131433706" duration="6928000" />
-    </task>
-    <task id="LOCAL-00021" summary="you can select the fields u want my REST API">
-      <created>1586543216740</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1586543216740</updated>
+      <workItem from="1587131433706" duration="9150000" />
+      <workItem from="1587299853567" duration="2117000" />
     </task>
     <task id="LOCAL-00022" summary="you can select the page and limit u want my REST API">
       <created>1586545883066</created>
@@ -424,14 +419,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587137465345</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="use dry more in factory">
+      <created>1587140797002</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1587140797002</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working with user permissions" />
     <MESSAGE value="forgot password not fully done it doesn't send the error" />
     <MESSAGE value="send forgot email and trap it" />
     <MESSAGE value="complete resetting password" />
@@ -456,17 +457,18 @@
     <MESSAGE value="using nested route to create tour" />
     <MESSAGE value="use tour router middleware for review router" />
     <MESSAGE value="nested route now work with get all reviews" />
-    <option name="LAST_COMMIT_MESSAGE" value="nested route now work with get all reviews" />
+    <MESSAGE value="use dry more in factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="use dry more in factory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587137464669">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587302259773">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587137464669" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587302259773" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -499,10 +501,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587137473165">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587140800112">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587137473165" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587140800112" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
