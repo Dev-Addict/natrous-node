@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/reviewRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reviewRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/tourRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataImporter.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataImporter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +78,7 @@
       <workItem from="1586512036868" duration="72746000" />
       <workItem from="1586788205389" duration="73543000" />
       <workItem from="1587131433706" duration="9150000" />
-      <workItem from="1587299853567" duration="8410000" />
-    </task>
-    <task id="LOCAL-00025" summary="using aggregation pipeline">
-      <created>1586582778804</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1586582778804</updated>
+      <workItem from="1587299853567" duration="9884000" />
     </task>
     <task id="LOCAL-00026" summary="using virtual property for tour model">
       <created>1586584400318</created>
@@ -425,14 +416,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587306132105</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="working more on auth and security">
+      <created>1587308763454</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1587308763454</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update your password" />
     <MESSAGE value="update user detail" />
     <MESSAGE value="now you can think you are deleting account but you aren't(I'm devil)" />
     <MESSAGE value="created a cookie" />
@@ -457,17 +454,18 @@
     <MESSAGE value="using factory to create and update models" />
     <MESSAGE value="finish the factory hahaha" />
     <MESSAGE value="make get current user function" />
-    <option name="LAST_COMMIT_MESSAGE" value="make get current user function" />
+    <MESSAGE value="working more on auth and security" />
+    <option name="LAST_COMMIT_MESSAGE" value="working more on auth and security" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587306131236">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587308762782">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587306131236" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587308762782" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -500,10 +498,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586174024946" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587306134786">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587308766459">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587306134786" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587308766459" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
