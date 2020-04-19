@@ -27,13 +27,13 @@ const sendToken = (user, res, statusCode) => {
     'JsonWebToken',
     token,
     {
-    expires:
-      new Date(
-        Date.now() +
-        process.env.JSON_WEB_TOKEN_COOKIE_TIME * 24 * 60 * 60 * 1000),
-    secure: true,
-    httpOnly: true
-  });
+      expires:
+        new Date(
+          Date.now() +
+          process.env.JSON_WEB_TOKEN_COOKIE_TIME * 24 * 60 * 60 * 1000),
+      secure: true,
+      httpOnly: true
+    });
 
   res.status(statusCode).json({
     status: 'success',
@@ -69,7 +69,6 @@ exports.signIn = catchAsync(async (req, res) => {
   if (!user || !(await user.correctPassword(password, user.password))) {
     throw new AppError('Incorrect email or password', 401);
   }
-
 
 
   sendToken(user, res, 200);
@@ -113,7 +112,7 @@ exports.restrictTo = (...roles) => {
 
 exports.forgotPassword = catchAsync(
   async (req, res, next) => {
-    const user = await User.findOne({email: req.body.email});
+    const user = await User.findOne({ email: req.body.email });
     if (!user) {
       throw new AppError('wrong Email address', 404);
     }
@@ -151,14 +150,13 @@ exports.resetPassword = catchAsync(
         .digest('hex');
     const user = await User.find({
       passwordResetToken: hashedToken,
-      passwordResetExpires: {$gt: Date.now()}
+      passwordResetExpires: { $gt: Date.now() }
     });
     if (!user) {
       throw new AppError('Token is invalid or expired', 400);
     }
     user.password = request.body.password;
     await user.save();
-
 
 
     sendToken(user, res, 200);
@@ -178,7 +176,7 @@ exports.updatePassword = catchAsync(async (req, res, next) => {
   sendToken(user, res, 200);
 });
 
-exports.updateUser = catchAsync(async (req, res, next)=> {
+exports.updateUser = catchAsync(async (req, res, next) => {
   if (req.body.password || req.body.email || req.body.role) {
     throw new AppError(
       'You can\'t change your password or email or role using this route',
@@ -196,14 +194,19 @@ exports.updateUser = catchAsync(async (req, res, next)=> {
     data: {
       user
     }
-  })
+  });
 });
 
 exports.deleteUser = catchAsync(async (req, res, next) => {
-  await User.findByIdAndUpdate(req.user.id, {active: false});
+  await User.findByIdAndUpdate(req.user.id, { active: false });
 
   res.status(204).json({
     status: 'success',
     data: null
   });
 });
+
+exports.getCurrentUser = (req, res, next) => {
+  req.params.id = req.user.id;
+  next();
+};

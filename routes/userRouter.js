@@ -17,6 +17,14 @@ router
   .post(authController.forgotPassword);
 
 router
+  .route('/currentUser')
+  .get(
+    authController.protect,
+    authController.getCurrentUser,
+    userController.getUser
+  );
+
+router
   .route('/resetPassword/:resetToken')
   .patch(authController.resetPassword);
 
