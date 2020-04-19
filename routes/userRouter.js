@@ -17,37 +17,41 @@ router
   .post(authController.forgotPassword);
 
 router
+  .route('/resetPassword/:resetToken')
+  .patch(authController.resetPassword);
+
+router.use(authController.protect);
+
+router
+  .route('/updatePassword')
+  .patch(authController.updatePassword);
+
+router
+  .route('/updateUser')
+  .patch(authController.updateUser);
+
+router
+  .route('/deleteUser')
+  .delete(authController.deleteUser);
+
+router.use(authController.restrictTo('admin'));
+
+router
+  .route('/')
+  .get(userController.getUsers)
+  .post(userController.createUser);
+router
+  .route('/:id')
+  .get(userController.getUser)
+  .patch(userController.updateUser)
+  .delete(userController.deleteUser);
+
+router
   .route('/currentUser')
   .get(
     authController.protect,
     authController.getCurrentUser,
     userController.getUser
   );
-
-router
-  .route('/resetPassword/:resetToken')
-  .patch(authController.resetPassword);
-
-router
-  .route('/updatePassword')
-  .patch(authController.protect, authController.updatePassword);
-
-router
-  .route('/updateUser')
-  .patch(authController.protect, authController.updateUser);
-
-router
-  .route('/deleteUser')
-  .delete(authController.protect, authController.deleteUser);
-
-router
-  .route('/')
-  .get(authController.protect, userController.getUsers)
-  .post(authController.protect, userController.createUser);
-router
-  .route('/:id')
-  .get(authController.protect, userController.getUser)
-  .patch(authController.protect, userController.updateUser)
-  .delete(authController.protect, userController.deleteUser);
 
 module.exports = router;
