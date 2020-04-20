@@ -78,14 +78,7 @@
       <workItem from="1586512036868" duration="72746000" />
       <workItem from="1586788205389" duration="73543000" />
       <workItem from="1587131433706" duration="9150000" />
-      <workItem from="1587299853567" duration="15849000" />
-    </task>
-    <task id="LOCAL-00029" summary="created some aggregation middleware">
-      <created>1586587520074</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1586587520074</updated>
+      <workItem from="1587299853567" duration="16912000" />
     </task>
     <task id="LOCAL-00030" summary="write some validators">
       <created>1586605594923</created>
@@ -423,14 +416,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587396710875</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="(update the tour rating logic '|' )(now working with deleting and updating too)">
+      <created>1587398166766</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1587398166766</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set limit for my api users" />
     <MESSAGE value="set helmet and request body limit" />
     <MESSAGE value="no nosql query injection and html in my db" />
     <MESSAGE value="add hpp to project" />
@@ -455,17 +454,18 @@
     <MESSAGE value="update the dataImporter.js" />
     <MESSAGE value="using index in mongoDB" />
     <MESSAGE value="update the tour rating logic '|'" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the tour rating logic '|'" />
+    <MESSAGE value="(update the tour rating logic '|' )(now working with deleting and updating too)" />
+    <option name="LAST_COMMIT_MESSAGE" value="(update the tour rating logic '|' )(now working with deleting and updating too)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587396710074">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587398165985">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587396710074" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587398165985" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -498,10 +498,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587396714604">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587398170482">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587396714604" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587398170482" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
