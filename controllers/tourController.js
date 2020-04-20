@@ -115,6 +115,50 @@ exports.getNearTours = catchAsync(
   }
 );
 
+exports.getDistances = catchAsync(
+  async (req, res, next) => {
+    const { latLan: latLan, unit } = req.params;
+    const [lat, lan] = latLan.split(',');
+
+    const multiplier = unit === 'mi' ? 0.000621371 : 0.001;
+
+    if (!lat || !lan) {
+      next(
+        new AppError(
+          'Please provide latitutr and longitude in the format lat,lan.',
+          400
+        )
+      );
+    }
+
+    const distances = await Tour.aggregate([
+      {
+        $geoNear: {
+          near: {
+            type: 'Point',
+            coordinates: [lan * 1, lat * 1]
+          },
+          distanceField: 'distance',
+          distanceMultiplier: multiplier
+        }
+      },
+      {
+        $project: {
+          distance: 1,
+          name: 1
+        }
+      }
+    ]);
+
+    res.status(200).json({
+      status: 'success',
+      data: {
+        data: distances
+      }
+    });
+  }
+);
+
 exports.getTours = factory.getAll(Tour);
 
 exports.getTour = factory.getOne(Tour, {path: 'reviews'});
