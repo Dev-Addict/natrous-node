@@ -22,6 +22,9 @@ router
     tourController.getMonthlyPlan
   );
 router
+  .route('/toursNear/:distance/center/:latLan/unit/:unit')
+  .get(tourController.getNearTours);
+router
   .route('/')
   .get(tourController.getTours)
   .post(

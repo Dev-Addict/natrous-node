@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/reviewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/reviewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tourModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tourModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/tourRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,14 +81,7 @@
       <workItem from="1586512036868" duration="72746000" />
       <workItem from="1586788205389" duration="73543000" />
       <workItem from="1587131433706" duration="9150000" />
-      <workItem from="1587299853567" duration="16912000" />
-    </task>
-    <task id="LOCAL-00030" summary="write some validators">
-      <created>1586605594923</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1586605594923</updated>
+      <workItem from="1587299853567" duration="21306000" />
     </task>
     <task id="LOCAL-00031" summary="handle the urls we dont support">
       <created>1586610989660</created>
@@ -423,14 +419,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587398166766</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="managing users to dont create two reviews on one tour">
+      <created>1587399272407</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1587399272407</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set helmet and request body limit" />
     <MESSAGE value="no nosql query injection and html in my db" />
     <MESSAGE value="add hpp to project" />
     <MESSAGE value="update tour model" />
@@ -455,17 +457,18 @@
     <MESSAGE value="using index in mongoDB" />
     <MESSAGE value="update the tour rating logic '|'" />
     <MESSAGE value="(update the tour rating logic '|' )(now working with deleting and updating too)" />
-    <option name="LAST_COMMIT_MESSAGE" value="(update the tour rating logic '|' )(now working with deleting and updating too)" />
+    <MESSAGE value="managing users to dont create two reviews on one tour" />
+    <option name="LAST_COMMIT_MESSAGE" value="managing users to dont create two reviews on one tour" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587398165985">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587399271733">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587398165985" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587399271733" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -498,10 +501,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587398170482">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587399276081">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587398170482" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587399276081" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
