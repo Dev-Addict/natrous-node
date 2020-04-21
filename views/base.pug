@@ -8,12 +8,12 @@ html(lang='en')
         link(rel='stylesheet' href='css/style.css')
         link(rel='shortcut icon' type='image/png' href='img/favicon.png')
 
-        title Natrous | Exciting tours for adventurous people
+        title Natrous | #{title}
 
     body
-    include _header
+        include _header
 
-    section.overview
-        h1= tour
+        block content
+            h1 Some Content
 
-    include _footer
+        include _footer
