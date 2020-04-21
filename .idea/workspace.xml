@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/overview.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/tour.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/viewsController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/viewRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/_footer.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/base.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/base.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Pug File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -86,14 +84,7 @@
       <workItem from="1586788205389" duration="73543000" />
       <workItem from="1587131433706" duration="9150000" />
       <workItem from="1587299853567" duration="25223000" />
-      <workItem from="1587479406433" duration="10478000" />
-    </task>
-    <task id="LOCAL-00036" summary="handle unhandled rejection and mongoDB errors">
-      <created>1586695234091</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1586695234091</updated>
+      <workItem from="1587479406433" duration="11383000" />
     </task>
     <task id="LOCAL-00037" summary="update the way of handle unhandled rejection">
       <created>1586695616833</created>
@@ -431,14 +422,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587489725566</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="create some other routes and use pug extends and block(its amazing fun new way html)">
+      <created>1587491346540</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1587491346540</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="populate the guides of tours in get tours" />
     <MESSAGE value="populate the guides using query middleware" />
     <MESSAGE value="create review model" />
     <MESSAGE value="create review controller" />
@@ -463,17 +460,18 @@
     <MESSAGE value="set view engine as pug and say hello pug" />
     <MESSAGE value="build the base of project" />
     <MESSAGE value="clear the body by using code reuse in pug" />
-    <option name="LAST_COMMIT_MESSAGE" value="clear the body by using code reuse in pug" />
+    <MESSAGE value="create some other routes and use pug extends and block(its amazing fun new way html)" />
+    <option name="LAST_COMMIT_MESSAGE" value="create some other routes and use pug extends and block(its amazing fun new way html)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587489724734">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587491345892">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587489724734" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587491345892" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -510,10 +508,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587489727989">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587491350491">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587489727989" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587491350491" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
