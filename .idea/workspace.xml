@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/base.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tourController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tourController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tourModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tourModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/tourRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tourRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +80,8 @@
       <workItem from="1586512036868" duration="72746000" />
       <workItem from="1586788205389" duration="73543000" />
       <workItem from="1587131433706" duration="9150000" />
-      <workItem from="1587299853567" duration="24460000" />
-    </task>
-    <task id="LOCAL-00032" summary="create global error handling middleware(amazing name yeah)">
-      <created>1586613303810</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1586613303810</updated>
+      <workItem from="1587299853567" duration="25223000" />
+      <workItem from="1587479406433" duration="1318000" />
     </task>
     <task id="LOCAL-00033" summary="clean global error handling middleware(amazing name yeah)">
       <created>1586614741895</created>
@@ -425,14 +419,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587404309165</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="working with distance field">
+      <created>1587408080029</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1587408080029</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add hpp to project" />
     <MESSAGE value="update tour model" />
     <MESSAGE value="add guides to tours" />
     <MESSAGE value="update guides in tours logic" />
@@ -457,21 +457,26 @@
     <MESSAGE value="(update the tour rating logic '|' )(now working with deleting and updating too)" />
     <MESSAGE value="managing users to dont create two reviews on one tour" />
     <MESSAGE value="find near tours by my api(mongoDb is powerful. isn't?)" />
-    <option name="LAST_COMMIT_MESSAGE" value="find near tours by my api(mongoDb is powerful. isn't?)" />
+    <MESSAGE value="working with distance field" />
+    <option name="LAST_COMMIT_MESSAGE" value="working with distance field" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587404308438">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587408079304">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587404308438" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587408079304" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="185" y="69" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1586625510206" />
+    <state x="436" y="205" key="EditFileWatcherDialog" timestamp="1587480859242">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="436" y="205" key="EditFileWatcherDialog/0.0.1536.864@0.0.1536.864" timestamp="1587480859242" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1586986096470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -500,10 +505,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587404312021">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587408082824">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587404312021" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587408082824" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
