@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/mapBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/starter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/login.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/base.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/base.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tour.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/tour.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/viewsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/viewsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/viewRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/viewRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Pug File" />
         <option value="JavaScript File" />
+        <option value="Pug File" />
       </list>
     </option>
   </component>
@@ -87,14 +84,7 @@
       <workItem from="1586788205389" duration="73543000" />
       <workItem from="1587131433706" duration="9150000" />
       <workItem from="1587299853567" duration="25223000" />
-      <workItem from="1587479406433" duration="34464000" />
-    </task>
-    <task id="LOCAL-00040" summary="sign up easily">
-      <created>1586707513892</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1586707513892</updated>
+      <workItem from="1587479406433" duration="35456000" />
     </task>
     <task id="LOCAL-00041" summary="using jwt and some security update">
       <created>1586714950153</created>
@@ -432,14 +422,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587563130406</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="create the map box">
+      <created>1587575775403</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1587575775403</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create review router" />
     <MESSAGE value="populate user and tour in review model" />
     <MESSAGE value="virtual populate the reviews" />
     <MESSAGE value="using nested route to create tour" />
@@ -464,17 +460,18 @@
     <MESSAGE value="use more mvc to work with views" />
     <MESSAGE value="create the overview page" />
     <MESSAGE value="create the tour page" />
-    <option name="LAST_COMMIT_MESSAGE" value="create the tour page" />
+    <MESSAGE value="create the map box" />
+    <option name="LAST_COMMIT_MESSAGE" value="create the map box" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587563129692">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587575774637">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587563129692" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587575774637" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -511,10 +508,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587563161007">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587575778012">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587563161007" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587575778012" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586625798996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
