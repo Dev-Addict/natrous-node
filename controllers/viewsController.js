@@ -11,8 +11,18 @@ exports.getOverview = catchAsync(
     });
   });
 
-exports.getTour = (req, res) => {
-  res.status(200).render('tour', {
-    title: 'The Forest Hiker'
+exports.getTour = catchAsync(
+  async (req, res) => {
+    const tour = await Tour
+      .findOne(
+        { name: req.params.tourName.replace(/-/g, ' ') }
+      )
+      .populate({
+        path: 'reviews',
+        fields: 'review rating user'
+      });
+    res.status(200).render('tour', {
+      title: req.params.tourName.replace(/-/g, ' '),
+      tour
+    });
   });
-};
