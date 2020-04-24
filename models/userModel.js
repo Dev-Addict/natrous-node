@@ -23,10 +23,7 @@ const userSchema = new mongoose.Schema({
   },
   photo: {
     type: String,
-    validate: {
-      validator: validator.isURL,
-      message: 'A User Must Have A Valid photo URL'
-    }
+    default: 'default.jpg'
   },
   rote: {
     type: String,

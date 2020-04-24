@@ -222,7 +222,12 @@ exports.updateUser = catchAsync(async (req, res, next) => {
     );
   }
 
-  const user = await User.findByIdAndUpdate(req.user._id, req.body, {
+  const updateDetail = req.body;
+  if (req.body.photo) {
+    updateDetail.photo = req.file.fileName;
+  }
+
+  const user = await User.findByIdAndUpdate(req.user._id, updateDetail, {
     new: true,
     runValidators: true
   });
