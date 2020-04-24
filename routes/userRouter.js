@@ -13,6 +13,10 @@ router
   .post(authController.signIn);
 
 router
+  .route('/logout')
+  .get(authController.logOut);
+
+router
   .route('/forgotPassword')
   .post(authController.forgotPassword);
 
