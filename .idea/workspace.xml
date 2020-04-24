@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,14 +84,7 @@
       <workItem from="1587131433706" duration="9150000" />
       <workItem from="1587299853567" duration="25223000" />
       <workItem from="1587479406433" duration="42835000" />
-      <workItem from="1587720291754" duration="13506000" />
-    </task>
-    <task id="LOCAL-00044" summary="protect my REST API">
-      <created>1586877196105</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1586877196105</updated>
+      <workItem from="1587720291754" duration="16026000" />
     </task>
     <task id="LOCAL-00045" summary="working with user permissions">
       <created>1586882751426</created>
@@ -430,14 +422,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587740771482</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="simple file updating">
+      <created>1587742933211</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1587742933211</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use tour router middleware for review router" />
     <MESSAGE value="nested route now work with get all reviews" />
     <MESSAGE value="use dry more in factory" />
     <MESSAGE value="using factory to create and update models" />
@@ -462,17 +460,18 @@
     <MESSAGE value="create the login ui" />
     <MESSAGE value="right login logic" />
     <MESSAGE value="logout and login" />
-    <option name="LAST_COMMIT_MESSAGE" value="logout and login" />
+    <MESSAGE value="simple file updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple file updating" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587740770617">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587742932546">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587740770617" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587742932546" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -509,10 +508,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587740773257">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587742935832">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587740773257" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587742935832" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1587648384236">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
