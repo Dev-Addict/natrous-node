@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +86,7 @@
       <workItem from="1587131433706" duration="9150000" />
       <workItem from="1587299853567" duration="25223000" />
       <workItem from="1587479406433" duration="42835000" />
-      <workItem from="1587720291754" duration="16791000" />
-    </task>
-    <task id="LOCAL-00046" summary="forgot password not fully done it doesn't send the error">
-      <created>1586884546129</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1586884546129</updated>
+      <workItem from="1587720291754" duration="19821000" />
     </task>
     <task id="LOCAL-00047" summary="send forgot email and trap it">
       <created>1586887425558</created>
@@ -429,14 +424,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587746577092</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="actually update the photo">
+      <created>1587747160318</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1587747160318</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use dry more in factory" />
     <MESSAGE value="using factory to create and update models" />
     <MESSAGE value="finish the factory hahaha" />
     <MESSAGE value="make get current user function" />
@@ -461,17 +462,18 @@
     <MESSAGE value="logout and login" />
     <MESSAGE value="simple file updating" />
     <MESSAGE value="more advance file updating" />
-    <option name="LAST_COMMIT_MESSAGE" value="more advance file updating" />
+    <MESSAGE value="actually update the photo" />
+    <option name="LAST_COMMIT_MESSAGE" value="actually update the photo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587746576502">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587750172384">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587746576502" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587750172384" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -508,10 +510,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587746580126">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587747163034">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587746580126" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587747163034" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1587648384236">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

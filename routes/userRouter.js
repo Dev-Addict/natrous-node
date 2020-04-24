@@ -34,7 +34,11 @@ router
 
 router
   .route('/updateUser')
-  .patch(userController.uploadUserPhoto, authController.updateUser);
+  .patch(
+    userController.uploadUserPhoto,
+    userController.resizeUserPhoto,
+    authController.updateUser
+  );
 
 router
   .route('/deleteUser')
