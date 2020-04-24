@@ -1,7 +1,11 @@
 const express = require('express');
+const multer = require('multer');
 
 const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
+
+const upload = multer({dest: 'public/img/users'});
+
 const router = express.Router();
 
 router
@@ -32,7 +36,7 @@ router
 
 router
   .route('/updateUser')
-  .patch(authController.updateUser);
+  .patch(upload.single('photo'), authController.updateUser);
 
 router
   .route('/deleteUser')
