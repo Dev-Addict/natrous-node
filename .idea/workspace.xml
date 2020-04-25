@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/email/resetPassword.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/Email.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Email.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,14 +84,7 @@
       <workItem from="1587131433706" duration="9150000" />
       <workItem from="1587299853567" duration="25223000" />
       <workItem from="1587479406433" duration="42835000" />
-      <workItem from="1587720291754" duration="34854000" />
-    </task>
-    <task id="LOCAL-00052" summary="created a cookie">
-      <created>1586962010888</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1586962010888</updated>
+      <workItem from="1587720291754" duration="38830000" />
     </task>
     <task id="LOCAL-00053" summary="set limit for my api users">
       <created>1586966803895</created>
@@ -429,14 +422,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587799742065</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="finalize the reset password email">
+      <created>1587803245627</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1587803245627</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using index in mongoDB" />
     <MESSAGE value="update the tour rating logic '|'" />
     <MESSAGE value="(update the tour rating logic '|' )(now working with deleting and updating too)" />
     <MESSAGE value="managing users to dont create two reviews on one tour" />
@@ -461,17 +460,18 @@
     <MESSAGE value="process tour images" />
     <MESSAGE value="work with email a bit more" />
     <MESSAGE value="finalize the welcome email" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalize the welcome email" />
+    <MESSAGE value="finalize the reset password email" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalize the reset password email" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587799740852">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587803244810">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587799740852" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587803244810" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -508,10 +508,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587799743771">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587803248065">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587799743771" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587803248065" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1587648384236">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
