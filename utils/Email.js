@@ -43,6 +43,10 @@ module.exports = class Email {
   }
 
   async sendWelcome() {
-    await this.send('welcome', 'Welcome to natrous Family!')
+    await this.send('welcome', 'Welcome to natrous Family!');
+  }
+
+  async sendPasswordReset() {
+    await this.send('resetPassword', 'Your password reset token(valid for 10 min)');
   }
 };
