@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d01f71-8759-4e91-997c-6dd724e462c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/email/welcome.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/email/_style.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/email/baseEmail.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/email.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/email.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/email.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Email.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/email/welcome.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/email/welcome.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,14 +87,7 @@
       <workItem from="1587131433706" duration="9150000" />
       <workItem from="1587299853567" duration="25223000" />
       <workItem from="1587479406433" duration="42835000" />
-      <workItem from="1587720291754" duration="29931000" />
-    </task>
-    <task id="LOCAL-00050" summary="update user detail">
-      <created>1586951295904</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1586951295905</updated>
+      <workItem from="1587720291754" duration="32519000" />
     </task>
     <task id="LOCAL-00051" summary="now you can think you are deleting account but you aren't(I'm devil)">
       <created>1586954404931</created>
@@ -432,14 +425,20 @@
       <option name="project" value="LOCAL" />
       <updated>1587792672209</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="work with email a bit more">
+      <created>1587797106710</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1587797106710</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working more on auth and security" />
     <MESSAGE value="update the dataImporter.js" />
     <MESSAGE value="using index in mongoDB" />
     <MESSAGE value="update the tour rating logic '|'" />
@@ -464,17 +463,18 @@
     <MESSAGE value="work with image a bit" />
     <MESSAGE value="get images for tours" />
     <MESSAGE value="process tour images" />
-    <option name="LAST_COMMIT_MESSAGE" value="process tour images" />
+    <MESSAGE value="work with email a bit more" />
+    <option name="LAST_COMMIT_MESSAGE" value="work with email a bit more" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586211459374">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1586211459374" />
-    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587792671268">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1587797106102">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587792671268" />
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587797106102" />
     <state x="185" y="69" key="DiffContextDialog" timestamp="1586625510206">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -511,10 +511,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587396231929" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587792686605">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1587797110059">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587792686605" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1587797110059" />
     <state x="430" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1587648384236">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

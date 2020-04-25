@@ -6,7 +6,7 @@ const validator = require('validator');
 const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/AppError');
-const sendEmail = require('../utils/email');
+const Email = require('../utils/Email');
 
 const signToken = ({ _id }) => {
   return jsonWebToken.sign(
@@ -51,6 +51,8 @@ exports.signUp = catchAsync(
       photo: req.body.photo,
       password: req.body.password
     });
+    const url = `${req.protocol}://${req.get('host')}`;
+    await new Email(user, url).sendWelcome();
 
     sendToken(user, 201, res);
   }
@@ -161,16 +163,16 @@ exports.forgotPassword = catchAsync(
     const resetURL =
       `${req.protocol}://${req.get('host')}/api/v1/users/resetPassword/${resetToken}`;
     const message = `Go to ${resetURL} to reset your password`;
-    await sendEmail({
-      email: user.email,
-      subject: 'Reset password (valid for 10 minutes)',
-      message
-    }).catch(async err => {
-      await user.save({
-        validateBeforeSave: false
-      });
-      throw new AppError('failed to send the email', 500);
-    });
+    // await sendEmail({
+    //   email: user.email,
+    //   subject: 'Reset password (valid for 10 minutes)',
+    //   message
+    // }).catch(async err => {
+    //   await user.save({
+    //     validateBeforeSave: false
+    //   });
+    //   throw new AppError('failed to send the email', 500);
+    // });
 
     res.status(200).json({
       status: 'success',
